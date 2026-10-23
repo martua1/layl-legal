@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="{{ page.lang | default: 'tr' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>{{ page.title }}</title>
+  <style>
+    :root { --bg: #0B1026; --surface: #161D3A; --accent: #E2B65C; --text: #ECEEF5; --muted: #A7AECB; }
+    html { background: var(--bg); }
+    body { margin: 0 auto; max-width: 42rem; padding: 2.5rem 1rem 4rem; color: var(--text); background: var(--bg);
+      font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; -webkit-font-smoothing: antialiased; }
+    h1 { font-size: 1.75rem; line-height: 1.25; margin: 2.5rem 0 0.5rem; text-wrap: balance; }
+    h2 { font-size: 1.15rem; margin: 2rem 0 0.5rem; }
+    p, li { text-wrap: pretty; }
+    a { color: var(--accent); }
+    strong { color: var(--text); }
+    hr { border: 0; border-top: 1px solid var(--surface); margin: 3rem 0; }
+    nav { color: var(--muted); font-size: 0.95rem; }
+    nav a { display: inline-block; padding: 0.5rem 0; }
+    table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+    th, td { text-align: left; padding: 0.5rem; border-bottom: 1px solid var(--surface); vertical-align: top; }
+    footer { margin-top: 3rem; color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+{{ content }}
+</body>
+</html>
